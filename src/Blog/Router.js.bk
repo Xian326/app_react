@@ -1,0 +1,18 @@
+import React from 'react';
+import { Router, Stack, Scene } from 'react-native-router-flux';
+import { BottomNavigation, Text } from 'react-native-paper';
+import index from './home';
+
+const Routes = () => {
+  return (
+    <Router>
+      <Stack key="root" headerLayoutPreset="center">
+        <Scene key="index" component={index} title="BLOG" initial />
+
+      </Stack>
+    </Router>
+  );
+};
+
+
+export default Routes;
